@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.status{
+    margin-top: -50px;
+    font-family: "Outfit", sans-serif;
+}
+.mainContainer {
+    margin: 10;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-top: -50px;
+}
+.even{
+    background-color: #ff9770;
+}
+.odd{
+    background-color: #ffd670;
+}
+.cell {
+    width: 100%;
+    height: 100px;
+    color: #3d3d3d;
+    padding: 0.7em 1.7em;
+    font-size: 28px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+
+}
+
+.even:active {
+color: #c86947;
+  box-shadow: inset 4px 4px 12px #c86947, inset -4px -4px 12px #f05c26;
+}
+
+.odd:active {
+    color: #d6af4e;
+      box-shadow: inset 4px 4px 12px #d6af4e, inset -4px -4px 12px #ffc123;
+    }
+
+#title {
+    text-align: center;
+    font-family: 'Limelight', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.resetBtn {
+    display: block;
+    width: 150px;
+    margin: -60px auto 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fffacd;
+    color: #090909;
+    border-radius: 5px;
+    font-family: "Outfit", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resetBtn:hover {
+    background-color: #6c6b6c;
+    color: rgb(197, 197, 197);
+}
+/* Popup overlay (covers entire screen) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  /* Popup box */
+  .popup {
+    width: 35%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease, scaleUp 0.5s ease;
+  }
+  
+  /* Popup message */
+  .popup-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Close button */
+  .close-popup {
+    padding: 10px 20px;
+    border: none;
+    background: #509dcc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Scale-up animation */
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

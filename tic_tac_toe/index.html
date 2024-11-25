@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Let's Play!</h1>
+    <div class="mainContainer">
+        <div class="cellContainer">
+        <button cellIndex="0" class="cell even"></button>
+        <button cellIndex="1" class="cell odd"></button>
+        <button cellIndex="2" class="cell even"></button>
+        <button cellIndex="3" class="cell odd"></button>
+        <button cellIndex="4" class="cell even"></button>
+        <button cellIndex="5" class="cell odd"></button>
+        <button cellIndex="6" class="cell even"></button>
+        <button cellIndex="7" class="cell odd"></button>
+        <button cellIndex="8" class="cell even"></button>
+    </div>
+    <div class="popup-overlay">
+        <div class="popup">
+          <p class="popup-message"></p>
+          <button class="close-popup">Close</button>
+        </div>
+      </div>
+      
+    </div>
+    <h2 class="status"></h2>
+    <button class="resetBtn">Reset</button>
+    <script src="index.js"></script>
+</body>
+</html>
