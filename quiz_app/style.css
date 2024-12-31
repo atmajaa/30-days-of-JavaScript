@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    gap: 5px;
+}
+#questions{
+    height: 100px;
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 6px 2px rgb(128, 131, 133);;
+}
+#explaination{
+    height: 50px;
+    width: 100%;
+}
+button{
+    margin-top: 10px;
+    height: 30px;
+    background-color: white;
+}
+.jsQuestions{
+    text-align: center;
+}
